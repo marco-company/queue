@@ -469,6 +469,8 @@ class QueueJobRunner:
                     for job_data in cr:
                         self.channel_manager.notify(db_name, *job_data)
                 _logger.info("queue job runner ready for db %s", db_name)
+            else:
+                db.close()
 
     def requeue_dead_jobs(self):
         for db in self.db_by_name.values():
