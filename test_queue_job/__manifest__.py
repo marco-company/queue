@@ -14,5 +14,6 @@
         "data/queue_job_function_data.xml",
         "security/ir.model.access.csv",
     ],
+    "maintainers": ["sbidoul"],
     "installable": True,
 }
