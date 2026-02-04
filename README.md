@@ -22,7 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_export_async](base_export_async/) | 16.0.1.2.0 |  | Asynchronous export with job queue
-[base_import_async](base_import_async/) | 16.0.1.2.0 |  | Import CSV files in the background
+[base_import_async](base_import_async/) | 16.0.1.2.1 |  | Import CSV files in the background
 [queue_job](queue_job/) | 16.0.2.12.0 | <a href='https://github.com/guewen'><img src='https://github.com/guewen.png' width='32' height='32' style='border-radius:50%;' alt='guewen'/></a> | Job Queue
 [queue_job_batch](queue_job_batch/) | 16.0.1.0.1 |  | Job Queue Batch
 [queue_job_cron](queue_job_cron/) | 16.0.2.1.0 |  | Scheduled Actions as Queue Jobs
