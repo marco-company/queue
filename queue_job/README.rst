@@ -1,7 +1,3 @@
-.. image:: https://odoo-community.org/readme-banner-image
-   :target: https://odoo-community.org/get-involved?utm_source=readme
-   :alt: Odoo Community Association
-
 =========
 Job Queue
 =========
@@ -17,7 +13,7 @@ Job Queue
 .. |badge1| image:: https://img.shields.io/badge/maturity-Mature-brightgreen.png
     :target: https://odoo-community.org/page/development-status
     :alt: Mature
-.. |badge2| image:: https://img.shields.io/badge/license-LGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/licence-LGPL--3-blue.png
     :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
     :alt: License: LGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fqueue-lightgray.png?logo=github
@@ -697,10 +693,13 @@ promote its widespread use.
 .. |maintainer-guewen| image:: https://github.com/guewen.png?size=40px
     :target: https://github.com/guewen
     :alt: guewen
+.. |maintainer-sbidoul| image:: https://github.com/sbidoul.png?size=40px
+    :target: https://github.com/sbidoul
+    :alt: sbidoul
 
-Current `maintainer <https://odoo-community.org/page/maintainer-role>`__:
+Current `maintainers <https://odoo-community.org/page/maintainer-role>`__:
 
-|maintainer-guewen| 
+|maintainer-guewen| |maintainer-sbidoul| 
 
 This module is part of the `OCA/queue <https://github.com/OCA/queue/tree/16.0/queue_job>`_ project on GitHub.
 

@@ -13,6 +13,8 @@
         "data/queue_job_channel_data.xml",
         "data/queue_job_function_data.xml",
         "security/ir.model.access.csv",
+        "data/queue_job_test_job.xml",
     ],
+    "maintainers": ["sbidoul"],
     "installable": True,
 }
