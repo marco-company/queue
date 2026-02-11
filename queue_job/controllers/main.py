@@ -11,6 +11,8 @@ from io import StringIO
 from psycopg2 import OperationalError, errorcodes
 from werkzeug.exceptions import BadRequest, Forbidden
 
+from typing import Optional
+
 from odoo import SUPERUSER_ID, _, api, http, registry, tools
 from odoo.service.model import PG_CONCURRENCY_ERRORS_TO_RETRY
 
@@ -27,7 +29,7 @@ DEPENDS_MAX_TRIES_ON_CONCURRENCY_FAILURE = 5
 
 class RunJobController(http.Controller):
     @classmethod
-    def _acquire_job(cls, env: api.Environment, job_uuid: str) -> Job | None:
+    def _acquire_job(cls, env: api.Environment, job_uuid: str) -> Optional[Job]:
         """Acquire a job for execution.
 
         - make sure it is in ENQUEUED state
