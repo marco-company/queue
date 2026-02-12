@@ -7,6 +7,7 @@ import random
 import time
 import traceback
 from io import StringIO
+from typing import Optional
 
 from psycopg2 import OperationalError, errorcodes
 from werkzeug.exceptions import BadRequest, Forbidden
@@ -27,7 +28,7 @@ DEPENDS_MAX_TRIES_ON_CONCURRENCY_FAILURE = 5
 
 class RunJobController(http.Controller):
     @classmethod
-    def _acquire_job(cls, env: api.Environment, job_uuid: str) -> Job | None:
+    def _acquire_job(cls, env: api.Environment, job_uuid: str) -> Optional[Job]:
         """Acquire a job for execution.
 
         - make sure it is in ENQUEUED state
